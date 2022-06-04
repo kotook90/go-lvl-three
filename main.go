@@ -19,7 +19,7 @@ func main() {
 	infoOfAllFiles, err := scanning.ListDirByWalk("/home/anton/projects/golang-3/hw2/duplicate")
 
 	if err != nil {
-		err = fmt.Errorf("произошла ошибка выполнения! %s", err)
+		_ = fmt.Errorf("произошла ошибка выполнения! %s", err)
 
 	}
 
