@@ -58,5 +58,5 @@ linters-settings:
     min-occurrences: 2
   funlen:
     # функция помечается длинной если она больше 100 строк кода либо больше 50 операций
-    lines: 50
-    statements: 50
+    lines: 110
+    statements: 110
