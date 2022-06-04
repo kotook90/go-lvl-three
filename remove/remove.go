@@ -28,8 +28,8 @@ func Remove(duplicateAmount map[sorting.CopyFiles]int, yes string) (err error) {
 				Rlog.Info("Пользователь согласился удалить дубликаты (Y)")
 				err = os.Remove(i.Path)
 				if err != nil {
-					err = fmt.Errorf("ошибка при удалении дубликатов %s", err)
-					Rlog.Errorf("ошибка при удалении дубликатов %s", err)
+					err = fmt.Errorf("ошибка удаления дубликатов %s", err)
+					Rlog.Errorf("ошибка удаления дубликатов %s", err)
 					return err
 				}
 				fmt.Println("Дубликаты файлов успешно удалены")
