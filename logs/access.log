@@ -1,0 +1,1 @@
+2022-06-04 19:25:13 SELECT SNo, Province/State FROM /home/anton/projects/golang-3/GolangBestPractices-coursework/fileCsv/covid_19_data.csv WHERE Country/Region = "Mainland China" AND Confirmed > 100 AND Deaths < 50 AND Recovered > 20
