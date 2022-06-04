@@ -21,7 +21,7 @@ func ListDirByWalk(path string) (infoOfAllFiles map[string]os.FileInfo, err erro
 			panic("Неверно указан каталог")
 		} else if path == "" {
 			defer os.Exit(2)
-			err = fmt.Errorf("Директория не указана! %s", err)
+			_ = fmt.Errorf("директория не указана! %s", err)
 			slog.Errorf("Директория не указана, работа программы завершена")
 
 		}
